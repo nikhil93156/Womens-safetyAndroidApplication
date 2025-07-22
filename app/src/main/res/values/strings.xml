@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AtmaRaksha</string>
+    <string name="lady_image_description">"lady image "</string>
+    <string name="by_team">by team2</string>
+    <string name="add_contacts">add</string>
+    <string name="emergency">emergency</string>
+    <string name="blue_button">Blue Button</string>
+    <string name="sos_option"> sos Option</string>
+    <string name="use_add_button_to_add_phone_numbers">Use Add button to add Phone numbers</string>
+    <string name="police_station">Police Station</string>
+    <string name="service_name">Service Name</string>
+    <string name="emergency_number">Emergency Number</string>
+    <string name="call_icon">Call Icon</string>
+    <string name="spy_camera">Detect camera</string>
+    <string name="contacts_nav">Contacts</string>
+    <string name="scan_nav">Scan</string>
+    <string name="police_nav">Nearby Police</string>
+    <string name="options_nav">Options</string>
+</resources>

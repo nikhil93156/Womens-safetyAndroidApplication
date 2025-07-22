@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#192A56"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/sosDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="Tap for emergency alert.\nLong press for siren."
+        android:textColor="#BDC3C7"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button2"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:backgroundTint="#D82E2F"
+        android:elevation="10dp"
+        android:text="SOS"
+        android:textColor="@android:color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <LinearLayout
+        android:id="@+id/bottom_nav_bar"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="#142142"
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/contacts_nav"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:icon="@drawable/ic_contacts"
+            app:iconGravity="top"
+            app:iconPadding="4dp"
+            app:iconTint="#FFFFFF" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Spy_camera_detect"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/scan_nav"
+            android:textColor="#7F8C8D"
+            android:textSize="12sp"
+            app:icon="@drawable/ic_scan"
+            app:iconGravity="top"
+            app:iconPadding="4dp"
+            app:iconTint="#7F8C8D" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/policeStationButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/police_nav"
+            android:textColor="#7F8C8D"
+            android:textSize="12sp"
+            app:icon="@drawable/ic_police"
+            app:iconGravity="top"
+            app:iconPadding="4dp"
+            app:iconTint="#7F8C8D" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sosOptionButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/options_nav"
+            android:textColor="#7F8C8D"
+            android:textSize="12sp"
+            app:icon="@drawable/ic_sosoptions"
+            app:iconGravity="top"
+            app:iconPadding="4dp"
+            app:iconTint="#7F8C8D" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
