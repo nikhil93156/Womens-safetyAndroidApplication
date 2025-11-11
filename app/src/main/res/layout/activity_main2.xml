@@ -7,6 +7,20 @@
     android:background="#192A56"
     tools:context=".MainActivity2">
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/galleryButton"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="Gallery"
+        app:icon="@drawable/ic_gallery_white_24dp"
+        app:iconTint="#FFFFFF"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/sosDescription"
         android:layout_width="wrap_content"
@@ -79,6 +93,18 @@
             app:iconTint="#7F8C8D" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/videoRecordButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Video"
+            android:textColor="#7F8C8D"
+            android:textSize="12sp"
+            app:icon="@drawable/ic_videocam" app:iconGravity="top"
+            app:iconPadding="4dp"
+            app:iconTint="#7F8C8D" />
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/policeStationButton"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="0dp"
@@ -107,5 +133,6 @@
             app:iconTint="#7F8C8D" />
 
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.safety"
-        minSdk 21
+        minSdk 26
         targetSdk 34 // Changed to match compileSdk
         versionCode 1
         versionName "1.0"
@@ -29,6 +29,12 @@ android {
 }
 
 dependencies {
+
+    // Dependencies required for Google Sign-In and Drive API access
+    implementation 'com.google.android.gms:play-services-auth:20.7.0'
+    implementation 'com.google.android.gms:play-services-drive:17.0.0'
+
+    
     implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation 'com.google.android.material:material:1.12.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.2.1'

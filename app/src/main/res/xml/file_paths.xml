@@ -1,0 +1,5 @@
+<resources>
+    <paths>
+        <external-files-path name="my_videos" path="." />
+    </paths>
+</resources>
