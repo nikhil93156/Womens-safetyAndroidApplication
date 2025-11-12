@@ -63,7 +63,7 @@ public class MainActivity2 extends AppCompatActivity implements SensorEventListe
     private long lastShakeTime = 0;
 
     // NEW/ADJUSTED CONSTANTS FOR HIGHER RELIABILITY
-    private static final float SHAKE_THRESHOLD_GRAVITY = 3.5F;
+    private static final float SHAKE_THRESHOLD_GRAVITY = 2.5F;
     private static final int SHAKE_TIME_LAPSE = 500;
     private static final int SHAKE_SLOP_TIME_MS = 2500;
     private static final int SHAKE_COUNT = 3;

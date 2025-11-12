@@ -108,6 +108,8 @@ public class LocalVideoGallery extends AppCompatActivity {
 
         videoListView.setOnItemClickListener((parent, view, position, id) -> {
             VideoItem selectedItem = videoItems.get(position);
+            Toast.makeText(getApplicationContext(),"Selected video: " + selectedItem.getName(), Toast.LENGTH_SHORT).show();
+            Log.d("VideoGallery", "Selected video:");
             openVideoFile(selectedItem.getFile());
         });
     }
